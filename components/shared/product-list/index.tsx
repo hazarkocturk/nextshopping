@@ -1,7 +1,7 @@
 import ProductCard from '../product-card';
-import type { ProductDTO } from '@/types/product';
+import type { Product } from '@/types';
 
-export default function ProductList({  products, title, limit } : {products: ProductDTO[], title?: string, limit?: number}) {
+export default function ProductList({  products, title, limit } : {products: Product[], title?: string, limit?: number}) {
    const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
